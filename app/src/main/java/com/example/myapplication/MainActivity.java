@@ -29,37 +29,60 @@ public class MainActivity extends AppCompatActivity {
     }
     public void toplama(View view)
     {
-        int number1= Integer.parseInt(number1Text.getText().toString());
-        int number2=Integer.parseInt(number2Text.getText().toString());
-        int result= number1+number2;
-        textView.setText("Result: " + result);
-
+        if (number1Text.getText().toString().matches("")|| number2Text.getText().toString().matches(""))
+        {
+            textView.setText("Please input a number");
+        }
+        else {
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+            int result = number1 + number2;
+            textView.setText("Result: " + result);
+        }
 
 
     }
     public void carpma(View view)
     {
-        int number1= Integer.parseInt(number1Text.getText().toString());
-        int number2=Integer.parseInt(number2Text.getText().toString());
-        int result= number1*number2;
-        textView.setText("Result: " + result);
+        if (number1Text.getText().toString().matches("")|| number2Text.getText().toString().matches(""))
+        {
+            textView.setText("Please input a number");
+        }
+        else
+            {
+                int number1= Integer.parseInt(number1Text.getText().toString());
+                int number2=Integer.parseInt(number2Text.getText().toString());
+                int result= number1*number2;
+                textView.setText("Result: " + result);
+            }
+
 
     }
     public void bolme(View view)
     {
-        int number1= Integer.parseInt(number1Text.getText().toString());
-        int number2=Integer.parseInt(number2Text.getText().toString());
-        int result= number1/number2;
-        textView.setText("Result: " + result);
-
+        if (number1Text.getText().toString().matches("")|| number2Text.getText().toString().matches(""))
+        {
+            textView.setText("Please input a number");
+        }
+        else {
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+            int result = number1 / number2;
+            textView.setText("Result: " + result);
+        }
     }
     public void cikarma(View view)
     {
-        int number1= Integer.parseInt(number1Text.getText().toString());
-        int number2=Integer.parseInt(number2Text.getText().toString());
-        int result= number1-number2;
-        textView.setText("Result: " + result);
-
+        if (number1Text.getText().toString().matches("")|| number2Text.getText().toString().matches(""))
+        {
+            textView.setText("Please input a number");
+        }
+        else {
+            int number1 = Integer.parseInt(number1Text.getText().toString());
+            int number2 = Integer.parseInt(number2Text.getText().toString());
+            int result = number1 - number2;
+            textView.setText("Result: " + result);
+        }
     }
 
 
